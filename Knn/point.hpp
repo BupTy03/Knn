@@ -99,7 +99,7 @@ template<typename T>
 double distance(const point2<T>& a, const point2<T>& b)
 {
 	return std::sqrt(
-		std::pow(static_cast<double>(b.x() - a.x()), 2.0) +
-		std::pow(static_cast<double>(b.y() - a.y()), 2.0)
+		std::pow(static_cast<double>(b.x()) - static_cast<double>(a.x()), 2.0) +
+		std::pow(static_cast<double>(b.y()) - static_cast<double>(a.y()), 2.0)
 	);
 }
